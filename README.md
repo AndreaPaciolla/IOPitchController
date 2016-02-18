@@ -27,9 +27,10 @@ http://localhost:3000/
 
 ### Related sources used
 
-The `'connection'` event is emitted when a peer connects to the server.
+The `'pitch's API'` are the same used by presentation framework `'impressJS'`.
 
 > [http://socket.io](http://socket.io/)
+
 > [https://github.com/impress/impress.js](https://github.com/impress/impress.js/)
 
 
