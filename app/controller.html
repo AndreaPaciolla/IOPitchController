@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remote presentation controller</title>
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="./lib/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<main id="container">
+  <h2>Navigate you slide presentation</h2>
+
+  <div class="button-wrapper">
+      <button class="main-button fa fa-info" id="prev-slide">
+          <div class="ripple">Prev</div>
+      </button>
+      <button class="main-button fa fa-info" id="next-slide">
+          <div class="ripple">Next</div>
+      </button>
+  </div>
+
+</main>
+
+<script type="text/javascript">
+	var socket = io();
+	$('#next-slide').click(function(e){
+		e.preventDefault();
+		socket.emit('presentation:next-slide', "");
+	});
+	$('#prev-slide').click(function(e){
+		e.preventDefault();
+		socket.emit('presentation:prev-slide', "");
+	});
+</script>
+</body>
+</html>

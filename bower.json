@@ -1,0 +1,27 @@
+{
+  "name": "IOPitchController",
+  "description": "Controlling presentations without external devices",
+  "dependencies": {
+    "jquery": "latest",
+    "impress.js": "~0.5.3",
+    "socket.io-client": "~1.3.7"
+  },
+  "keywords": [
+    "slide",
+    "presentations",
+    "controller",
+    "pitch"
+  ],
+  "authors": [
+    "Andrea Paciolla <andreapaciolla@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
